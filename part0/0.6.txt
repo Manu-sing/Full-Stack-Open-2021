@@ -1,0 +1,44 @@
+title part 0 - exercise 6
+
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML - code
+
+note over server:
+the server, after receiving the above request from the browser,
+sends the html structure of the page. The form tag in this case has no
+action and method attributes to define how and where to send the input data
+and the js file is different
+end note
+
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css 
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+browser starts executing the code in spa.js
+that requests JSON data from server
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+browser renders notes
+end note
+
+note over browser:
+user writes a new note and cliks on the save button, 
+browser handles adding the new note with js, 
+sends a POST request to the server to add the new note to the back-end
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: application/json 
+
+note over server:
+server responds with an object containing a message that 
+the new note has been created: {"message":"note created"}
+end note
