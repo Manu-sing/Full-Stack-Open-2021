@@ -1,0 +1,32 @@
+
+html {
+    font-family: sans-serif;
+    
+  }
+
+p {
+  width: 50vw;
+}
+  
+table {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    width: 250px;
+  }
+  
+td {
+    border: 1px solid black;
+    padding: 10px 20px;
+    width: 50%;
+  }
+
+button {
+    cursor: pointer;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    padding: 4px 8px;
+}
+
+
+  
