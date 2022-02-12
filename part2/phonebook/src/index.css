@@ -1,0 +1,29 @@
+.message {
+    color: green;
+    background: white;
+    font-size: 18px;
+    border: solid black 1px;
+    border-radius: 0.6rem;
+    padding: 10px;
+    margin: 10px 0;
+    width: 30vw;   
+}
+
+.error {
+    color: red;
+    background: white;
+    font-size: 18px;
+    border: solid black 1px;
+    border-radius: 0.6rem;
+    padding: 10px;
+    margin: 10px 0;
+    width: 30vw;      
+}
+
+.person {
+    margin-top: 10px;
+}
+
+.form-element {
+    margin-top: 10px; 
+}
